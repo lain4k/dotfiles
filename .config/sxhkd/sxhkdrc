@@ -29,11 +29,11 @@ super + g
 
 #Volume Control
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+	amixer set Master 5%+
 XF86AudioLowerVolume
-    	pactl set-sink-volume 0 -5%
+    	amixer set Master 5%-
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	amixer set Master toggle
 # STATE/FLAGS
 
 # set the window state
@@ -116,11 +116,11 @@ XF86MonBrightnessUp
 	brightnessctl set +5%	
 XF86MonBrightnessDown
 	brightnessctl set 5%-
+
 # APPLICATION KEYBINDINGS (Super + Alt + Key)
 
-# terminal emulator
 super + Return
-  urxvt
+  wezterm
 
 super + e
 	pcmanfm
@@ -128,14 +128,13 @@ super + e
 super + l
 	/usr/bin/xflock4
 
-super + w 
-  brave-browser-nightly
+super + w
+	librewolf
 super + d 
 	dmenu_run
 
 super + space
   dmenu_run -c -l 30	
-  #rofi -show drun    
     
 super + shift + s    
   scrot -f "/tmp/null.png" -o -s -e 'xclip -selection clipboard -t image/png -i $f'
