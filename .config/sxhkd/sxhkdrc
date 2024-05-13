@@ -115,12 +115,12 @@ super + {Left,Down,Up,Right}
 XF86MonBrightnessUp
 	brightnessctl set +5%	
 XF86MonBrightnessDown
-	brightnessctl set 5%-
+	brightnessctl set 1%-
 
 # APPLICATION KEYBINDINGS (Super + Alt + Key)
 
 super + Return
-  wezterm
+  urxvt
 
 super + e
 	pcmanfm
@@ -129,7 +129,8 @@ super + l
 	/usr/bin/xflock4
 
 super + w
-	librewolf
+	brave-nightly
+
 super + d 
 	dmenu_run
 
