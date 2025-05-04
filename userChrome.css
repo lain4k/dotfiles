@@ -1,0 +1,24 @@
+#main-window {
+	background: transparent !important;
+}
+
+#navigator-toolbox {
+	background-color: transparent !important;
+	border-bottom:2px solid transparent !important;
+}
+
+.tab-background {
+   background-color: #E0DCC7 !important;
+}
+
+.tab-background:is([selected]) {
+	background-color: #FFFBEF !important;
+}
+
+.tabbrowser-tab {
+	min-width: initial !important;
+}
+
+.tab-content {
+	overflow: hidden !important;
+}
