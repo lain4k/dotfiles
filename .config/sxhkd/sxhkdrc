@@ -129,7 +129,7 @@ super + l
 	/usr/bin/xflock4
 
 super + w
-	brave-nightly
+	floorp	
 
 super + d 
 	dmenu_run
