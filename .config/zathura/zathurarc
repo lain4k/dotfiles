@@ -1,9 +1,0 @@
-# general settings
-set page-padding 0
-
-# color scheme
-include everforest
-
-set default-bg rgba(30,35,38,0.7)
-
-set selection-clipboard clipboard
