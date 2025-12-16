@@ -8,8 +8,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias vi='nvim'
 alias l='ls -lah'
-alias cnm='connmanctl'
-alias fuck='sudo $(history -p !!)'
 alias cd='z'
 
 export LIBVIRT_DEFAULT_URI="qemu:///system"
