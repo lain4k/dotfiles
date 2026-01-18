@@ -1,4 +1,4 @@
-// This config is in the KDL format: https://kdl.dev
+// This config is.5 in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
@@ -189,9 +189,9 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         //off
 
-        width 2
-        active-color "#BABABA"
-        inactive-color "#919191"
+        width 2.5
+        active-color "#dddddf"
+        inactive-color "#a1a29d"
 
         // Color of the border around windows that request your attention.
         urgent-color "#c56e74"
@@ -587,5 +587,5 @@ binds {
 
 	 Alt+C { spawn-sh "niri msg pick-color | rg -o '#.*' | tr -d '\n' | wl-copy"; }
 
-	 Mod+E { spawn "dolphin"; }
+	 Mod+E { spawn "nautilus"; }
 }
